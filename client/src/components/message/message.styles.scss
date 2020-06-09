@@ -1,0 +1,30 @@
+.msg-container{
+  
+    height: auto;
+    max-width: 80%;
+    display: inline-block;
+    margin: 10px;
+
+    &.justify-right{
+        float:right;
+        margin-right: 25px;
+    }
+
+    &.justify-left{
+        float:left;
+        margin-left: 25px;
+    }
+
+    .user-name {
+        border-bottom: 1px solid #465069;
+        color: #465069;
+    }
+
+    .msg-txt{
+        margin-top: 10px;
+        box-shadow:  2px 2px 6px #0c0f11, 
+        -2px -2px 6px #2e373f;
+        border-radius: 5px;
+        padding: 16px 10px;
+    }
+}

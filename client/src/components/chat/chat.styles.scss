@@ -1,0 +1,52 @@
+.outer {
+  width: 95vw;
+  height: 95vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inner {
+  width: 35vw;
+  height: 55vh;
+  border-radius: 40px;
+  background: #1d2328;
+  position: relative;
+  bottom: 100px;
+  box-shadow: 11px 11px 22px #0c0f11, -11px -11px 22px #2e373f;
+
+  .chat-container{
+    height: 88%;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+p{
+    margin-left: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #465069;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a1e29;
+  border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .inner {
+      width:85vw;
+      height: 80vh;
+      bottom: 0px;
+    }
+  }

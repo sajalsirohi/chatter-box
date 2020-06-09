@@ -1,0 +1,44 @@
+.message-form {
+  
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  position: absolute;
+  bottom:20px;
+  width:32.5vw;
+  padding-left: 15px;
+  
+
+  .send-btn {
+    width: 25%;
+    border-radius: 50px;
+    background-color: #4a1e29;
+    box-shadow: 5px 5px 10px #0c0f11;
+    border: none;
+    cursor: pointer;
+
+    &:focus{
+      outline: none;
+    }
+
+  }
+
+  .input-message{
+      border: none;
+      height:90%;
+      font-size: 20px;
+      padding-left: 10px;
+      border-bottom: 1px solid red;
+      width:70%;
+      &:focus{
+          outline: none;
+      }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+    .message-form {
+      width:80vw;
+      padding-right: 0;
+    }
+  }
